@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adam Goldman Automated Brain Tools</title>
+    <link rel="stylesheet" href="/ghost.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="/global.js"></script>
+  </head>
+  <body>
+      <ul>
+        <li><a href="pages/feel-good-generator.html">Feel Good Generator</a></li>
+      </ul>
+    <div class="site-wrapper">
+      <div class="post">
+      <section class="post-content">
+
+      <h1>Feel Good Generator</h1>
+
+      <div id="step-0">
+      Think of a feeling or a resource u'd like to<br />
+      have more available for u now (and then),<br />
+      and u'd like to experience it more as u progress through life.<br />
+        <br />
+        <form id="resource-type-form">
+          <div class="input-container">
+            <input autofocus id="resource-input" placeholder="I want to experience more ..." required /><br />
+          </div>
+          <button>Let's continue</button>
+        </form>
+      </div>
+
+      <div id="step-1" style="display: none;">
+        And how many times has the earth revolved around the sun since your inception on this planet?
+        <br /><br />
+        <form id="age-form">
+          <div class="input-container">
+            <input autofocus placeholder="I am XX years of age" id="age-input" type="number" min="0" max="99" required />
+          </div>
+          <button>Done. Let's continue</button>
+          <button>Onwards with the show!</button>
+        </form>
+        <br />
+        <br />
+        - <a onclick="goToStep(0)">Back</a>
+      </div>
+
+      <div id="step-2" style="display: none;">
+        Now, in all your <span class="age-ref"></span> years on this planet,<br />
+        u had many experiences and events, in which<br />
+        u experienced <span class="resource-ref"></span> in a variety of ways and degrees,<br />
+        in which some r stronger than others,<br />
+      <br />
+        and as u think of some of them now,<br />
+        there's a few in particular,<br />
+        or one, that REALLY comes to mind,<br />
+        so go back to that experience and describe it here:<br />
+      <br />
+        <form id="resource-experience-form">
+          <div class="input-container">
+            <input id="resource-scenario-age-input" placeholder="In this memory I am XX years of age" type="number" min="0" max="99" required />
+            <input id="resource-scenario-location-input" placeholder="In this memory I'm in / at ..." required />
+            <textarea id="resource-scenario-details-input" placeholder="In this memory I am looking at ... Hearing the ... Feeling the touch of ..."></textarea>
+          </div>
+          <button>Done describing the good experience</button>
+          <button>This is cool, let's continue!</button>
+        </form>
+        <br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(1)">Back</a>
+      </div>
+
+      <div id="step-3" style="display: none;">
+        Go through that <span class="resource-ref"></span> experience out loud again, so that as<br />
+<br />
+        <i>"I am <span class="resource-scenario-age-ref"/></span> y/o,
+        in <span class="resource-scenario-location-ref"/></span>,
+        <span class="resource-scenario-details-ref"></span>"</i>
+      <br /><br />
+        and notice the special moments,<br />
+      <br />
+        Like in the movies, as u think of a good movie which induces within u a response, the movie itself could b "great", but there r those tiny magical moments in which there's such a build up,<br />
+        and so many feelings come together inside, that is almost indescribable.<br />
+      <br />
+        Go through your experience of <span class="resource-ref"></span> again,<br />
+        and notice in which moments u feel <span class="resource-ref"></span> the most,<br />
+        and fill in more details about it,<br />
+        so u add on to what u've done already:<br />
+      <br />
+        <form id="resource-experience-second-form">
+          <div class="input-container">
+            <textarea id="resource-scenario-second-details-input" required></textarea>
+          </div>
+          <button>I've added more things, feel even better now!</button>
+          <button>This is cool, let's continue</button>
+        </form>
+        <br />
+        <br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(2)">Back</a>
+      </div>
+
+      <div id="step-4" style="display: none;">
+        And as u think about that memory that induces <span class="resource-ref"></span>,<br />
+        and u think of that special moment,<br />
+        I want u now to step inside that memory,<br />
+        so u c what u saw at the time,<br />
+        hear what u heard,<br />
+        feel what u felt,<br />
+        and make the image brighter,<br />
+        bigger,<br />
+        add depth,<br />
+        make it sharper,<br />
+        so as u feel it more,<br />
+        begin to notice u can notice more of the sounds,<br />
+        the smells,<br />
+        and as u do so notice where it is in your body that u can feel,<br />
+        and a growing sensation of more than <span class="resource-ref"></span>,<br />
+        I wonder if u begin to wonder,<br />
+        as you wander around how much more u can feel good as<br />
+        you notice where in your body u feel this feeling first,<br />
+        and where does a feeling go to as it starts to move and spread, now,<br />
+        as u keep the feeling spinning faster and faster ...<br />
+      <br />
+        Keep intensifying the good feeling and <span class="resource-ref"></span>, and as u read what u wrote again, notice how much more u can feel about that same exeprience of <span class="resource-ref"></span> now
+      <br />
+      <br />
+        <i>"I am <span class="resource-scenario-age-ref"/></span> y/o,
+        in <span class="resource-scenario-location-ref"/></span>,
+        <span class="resource-scenario-second-details-ref"></span>"</i>
+      <br />
+      <br />
+        And as u experience more and more,<br />
+        and it becomes more a part of u,<br />
+        I'm curious if u get curious about what color could that feeling have,<br />
+        as u feel it in more ways,<br />
+        and I wonder if u like the adventure to<br />
+        think of what sound could this feeling make,<br />
+        and what color does a good feeling have,<br />
+        when it feels as good deep inside,<br />
+        and you can hear with me new sensations,<br />
+        and when u r ready to get even more advanced ...<br />
+        <br />
+        - This is great, <a class="share-this-page-fb">others should experience this too!</a><br />
+        - <a onclick="goToStep(5)">I'm ready to feel the advanced level!</a><br />
+        - <a href="/i-dont-charge-i-accept/">This is great, I want to give back!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(3)">Back</a>
+      </div>
+
+      <div id="step-5" style="display: none;">
+        think about a situation not too far from today,<br />
+        maybe in a few hours or a few days (and daze),<br />
+        in which u used to not have enough <span class="resource-ref"></span> in the past,<br />
+        and notice now as you keep spinning this feeling,<br />
+        you r learning u can begin to realize how fast u can<br />
+        learn to respond in new ways to old limitations which used<br />
+        to have bothered u before, yet u will be surprised as each<br />
+        time u do this, u can feel the <span class="resource-ref"></span> fill u even more,<br />
+        and isn't it odd to feel as good about something u did not<br />
+        think about just a few moments ago?<br />
+      <br />
+        And as u wander more and more around what it is u do not<br />
+        know yet, as more than just air fills your lounges and u succumb<br />
+        to good feelings, and it feels so right to be lost sometimes,
+        and what's still left in u that u don't want anymore can get
+        curious as u think about the most important question of them all,
+        and "how much pleasure can I stand", even if u sit or lay down
+        in an odd place, deeper than before, as u surface back, only at the
+        rate and speed as u feel more and more <span class="resource-ref"></span> fill bigger parts of your life,
+        now and then, the more u do this now ...
+        <br />
+        <br />
+        - <a onclick="goToStep(0)">I feel better, let's do it again!</a><br />
+        - <a class="share-this-page-fb">We must tell others about this!</a><br />
+        - <a href="/i-dont-charge-i-accept/">This is great, I want to give back!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(4)">Back</a>
+      </div>
+      <hr />
+      You can do this, and more,
+      I got your back.
+        <a class="ending-avatar" href="/who-am-i-anyway/">
+          <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Grief" />
+        </a>
+      \- [**Adam "feel good" Goldman**](/)
+      </section>
+      </div>
+    </div>
+    <script>
+      el('resource-type-form').addEventListener('submit', onResourceTypeSubmit)
+      el('age-form').addEventListener('submit', onAgeSubmit)
+      el('resource-experience-form').addEventListener('submit', onResourceExperienceSubmit)
+      el('resource-experience-second-form').addEventListener('submit', onResourceExperienceSecondSubmit)
+
+      function onResourceTypeSubmit(evt) {
+        evt.preventDefault()
+        populateRefSelector('.resource-ref', 'resource-input')
+        goToStep(1)
+      }
+
+      function onAgeSubmit(evt) {
+        evt.preventDefault()
+        populateRefSelector('.age-ref', 'age-input')
+        goToStep(2)
+      }
+
+      function onResourceExperienceSubmit(evt) {
+        evt.preventDefault()
+        populateRefSelector('.resource-scenario-age-ref', 'resource-scenario-age-input')
+        populateRefSelector('.resource-scenario-location-ref', 'resource-scenario-location-input')
+        populateRefSelector('.resource-scenario-details-ref', 'resource-scenario-details-input')
+        el('resource-scenario-second-details-input').innerHTML = el('resource-scenario-details-input').value
+        goToStep(3)
+      }
+
+      function onResourceExperienceSecondSubmit(evt) {
+        evt.preventDefault()
+        populateRefSelector('.resource-scenario-second-details-ref', 'resource-scenario-second-details-input')
+        goToStep(4)
+      }
+
+    </script>
+  </body>
+</html>
