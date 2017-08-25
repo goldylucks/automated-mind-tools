@@ -1,0 +1,12 @@
+.DS_STORE
+node_modules
+build
+.module-cache
+*.log*
+*.swp
+reports
+coverage
+/*.zip
+*.sublime*
+/lib/
+/dist/
