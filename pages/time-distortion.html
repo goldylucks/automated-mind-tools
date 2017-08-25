@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adam Goldman Automated Brain Tools</title>
+    <link rel="stylesheet" href="/ghost.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="/global.js"></script>
+  </head>
+  <body>
+      <ul>
+        <li><a href="pages/feel-good-generator.html">Feel Good Generator</a></li>
+      </ul>
+    <div class="site-wrapper">
+      <div class="post">
+      <section class="post-content">
+
+      <h1>Time Distortion</h1>
+
+      <div id="step-0">
+        <h3>Step 0: Set The Stage</h3>
+        u know how sometimes u wait in line for half an hour,
+        and u look at the time and less than 10 minutes have gone by?
+        <br /><br />
+        or u r starving waiting for your meal, about to snap at the poor waiter
+        for torturing u for so long, only to realize just a few minutes have passed?
+        <br /><br />
+        on the other hand, when u r having fun with that special friend,
+        or c a great movie, it seems like hours turn to minutes, and
+        "where did the time ago???"
+        <br /><br />
+        That happens all the time, and the ability to control time
+        at the time u wish is a good recipe to turn bad time to good time,
+        and turn good time to something so wonderful u might have not experienced yet.
+        <br /><br />
+        Ready to get into some whacky states?
+        <br /><br />
+        - <a onclick="goToStep(1)">Let's do this!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+      </div>
+
+      <div id="step-1" style="display: none;">
+        <h3>Step 1: Pick Category</h3>
+        pick a recurring situation u have trouble dealing with i.e. <br />
+        going to the bank, dealing with a certain person, etc
+        <br /><br />
+        <input placeholder="I have trouble dealing with ..." />
+        <br /><br />
+        - <a onclick="goToStep(2)">I picked a category</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(0)">Back</a>
+      </div>
+
+      <div id="step-2" style="display: none;">
+        <h3>Step 2: pick A SPECIFIC example</h3>
+        or a future scenario of that recurring situation
+        (i.e. a specific scenario of u standing in line for the bank, or talking to the teller)
+        <br /><br />
+        <input placeholder="My scenario is when I ..." />
+        <br /><br />
+        - <a onclick="goToStep(3)">I have a specific example in mind</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(1)">Back</a>
+      </div>
+
+      <div id="step-3" style="display: none;">
+        <h3>Step 3: Normal time</h3>
+        run that scenario in your mind in normal time, just as u usually think about it
+        <br /><br />
+        - <a onclick="goToStep(4)">I ran the scenario in normal time, what's next?</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(2)">Back</a>
+      </div>
+
+      <div id="step-4" style="display: none;">
+        <h3>Step 4: Describe (normal time)</h3>
+        how was it to run the scenario "normally"?<br />
+        how it feels like?<br />
+        and how intense is the feeling?<br />
+        <br /><br />
+        <textarea placeholder="Running the scenario in normal time makes me feel ..."></textarea>
+        <br /><br />
+        - <a onclick="goToStep(5)">Done describing normal time, let's continue!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(3)">Back</a>
+      </div>
+
+      <div id="step-5" style="display: none;">
+        <h3>Step 5: Fast time</h3>
+        go back to the beginning of the scenario,<br />
+        freeze the frame,<br />
+        step inside the beginning of the memory,<br />
+        and hear and feel turning down a knob and slow YOURSELF to half speed,<br />
+        so everything will be running twice as fast in your subjective experience,<br />
+        and go through the scenario in fast time<br />
+        i.e. every one in the bank will talk and move twice as fast as u<br />
+        <br />
+        - <a onclick="goToStep(6)">I ran the scenario in fast time, what's next?</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(4)">Back</a>
+      </div>
+
+      <div id="step-6" style="display: none;">
+        <h3>Step 6: Describe (fast time)</h3>
+        how was it to run the scenario in "fast time"?<br />
+        how it feels like?<br />
+        and how intense is the feeling?<br />
+        <br /><br />
+        <textarea placeholder="Running the scenario in fast time makes me feel ..."></textarea>
+        <br /><br />
+        - <a onclick="goToStep(7)">Done describing fast time, let's continue!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(5)">Back</a>
+      </div>
+
+      <div id="step-7" style="display: none;">
+        <h3>Step 7: Slow time</h3>
+        go back to the beginning of the scenario,<br />
+        freeze the frame,<br />
+        step inside the beginning of the memory,<br />
+        hear and feel turning up a knob and speed YOURSELF back to normal speed,<br />
+        then turn the knob further up and speed YOURSELF to double speed,<br />
+        so everything will be running twice as slow in your subjective experience,<br />
+        and go through the scenario in slow time<br />
+        <br /><br />
+        - <a onclick="goToStep(8)">I ran the scenario in slow time, what's next?</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(6)">Back</a>
+      </div>
+
+      <div id="step-8" style="display: none;">
+        <h3>Step 8: Describe (slow time)</h3>
+        how was it to run the scenario in "slow time",<br />
+        how it feels like,<br />
+        and how intense is the feeling<br />
+        <br /><br />
+        <textarea placeholder="Running the scenario in slow time makes me feel ..."></textarea>
+        <br /><br />
+        - <a onclick="goToStep(9)">Done describing slow time, let's continue!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(7)">Back</a>
+      </div>
+
+      <div id="step-9" style="display: none;">
+        <h3>Step 9: Normal time again</h3>
+        now try and run the same scenario in normal time,<br />
+        and get the old feeling back, and notice what happens.<br />
+        <br /><br />
+        <textarea placeholder="I tried running the scenario in normal time like the beginning and noticed that ..."></textarea>
+        <br /><br />
+        for me it changed from negative to "c'mon out with it! let's get it over with!" sort of a comical impatience
+        <br /><br />
+        - <a onclick="goToStep(1)">That's crazy, let's do it again on something else that used to bother me!</a><br />
+        - This is great we must <a class="share-this-page-fb">inform the others!</a><br />
+        - <a onclick="goToStep(10)">I'm ready for advanced stuff (pleasure junkies)</a><br />
+        - <a href="/i-dont-charge-i-accept/">This is great, I want to give back!</a><br />
+        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+        - <a onclick="goToStep(8)">Back</a>
+      </div>
+
+      <div id="step-10" style="display: none;">
+        <h3>Step 10: advanced stuff (pleasure junkies)</h3>
+        (if u r an ectasy junky like <a href="/who-am-i-anyway/">me</a>, love this u will ...)<br />
+        repeat the entire process for a recurring pleasurable situation.<br />
+        (this is some trippy shit ...)<br />
+        I went for juggling and sex,<br />
+        and juggled between the two,<br />
+        not necessarily in that order ;)<br />
+        <br /><br />
+        When u r ready, repeat the process, and replace "trouble" with "pleasurable" as you come along
+        <br /><br />
+        - <a onclick="goToStep(1)">okay let's intensify some good feelings!</a><br />
+        - <a href="/i-dont-charge-i-accept/">I like to give back</a><br />
+        - <a onclick="goToStep(1)">Let's change more things that used to bother me!</a><br />
+        - This is great we must <a class="share-this-page-fb">inform the others!</a>
+      </div>
+      <hr />
+      You can do this, and more,
+      I got your back.
+        <a class="ending-avatar" href="/who-am-i-anyway/">
+          <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Grief" />
+        </a>
+      \- [**Adam "time distorter" Goldman**](/)
+  </body>
+</html>

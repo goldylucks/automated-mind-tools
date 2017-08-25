@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adam Goldman Automated Brain Tools</title>
+    <link rel="stylesheet" href="/ghost.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="/global.js"></script>
+  </head>
+  <body>
+      <ul>
+        <li><a href="pages/feel-good-generator.html">Feel Good Generator</a></li>
+      </ul>
+    <div class="site-wrapper">
+      <div class="post">
+      <section class="post-content">
+
+      <h1>Trauma Reliever</h1>
+
+      <div id="step-0">
+        <p>Think about a memory u have, which pops to your mind every now and then, and still makes u feel bad, or in a way u don't want to</p>
+        <p>(NOTE: if this memory is about the loss of a loved one, <a href="/grief-to-appreciation/">do this</a> instead)</p>
+        <form id="name-age-form">
+          <div class="input-container">
+            <input autofocus placeholder="How old were u in that memory?" id="age-input" type="number" min="0" max="99" required />
+          </div>
+          <div class="input-container">
+            <input placeholder="What is your name?" id="name-input" required />
+          </div>
+          <button>Let's continue</button>
+        </form>
+      </div>
+
+      <div id="step-1" style="display: none;">
+        c <span class="your-age"></span> y/o <span class="your-name"></span> in the picture  <br />
+        freeze it <br />
+        push it further away <br />
+        make it smaller <br />
+        mute the sound <br />
+        so u c <span class="your-age"></span> y/o <span class="your-name"></span> at the beginning of the memory <br />
+        far far away <br />
+        small <br />
+        muted <br />
+        And let me know when you're done. <br />
+
+        <div>- <a onClick="goToStep(2)">Let's continue</a></div>
+        <div>- <a onClick="dontUnderstandStep()">There's something I don't understand</a></div>
+        <div>- <a onClick="goToStep(0)">Back</a></div>
+      </div>
+
+      <div id="step-2" style="display: none;">
+        now, as u c <span class="your-age"></span> y/o <span class="your-name"></span> in the small still picture far far away, <br />
+        fast forward it and freeze it at the end of the memory <br />
+        you know the sound of a fast forwarding a cartoon? <br />
+        like a cartoon, hear everything going forward very fast <br />
+        Watch <span class="your-age"></span> y/o <span class="your-name"></span> far far away in the small picture <br />
+        and let me know when u r at the end, seeing <span class="your-age"></span> y/o <span class="your-name"></span> in the frozen small picture <br /> far far away
+
+        <div>- <a onClick="goToStep(3)">Let's continue</a></div>
+        <div>- <a onClick="dontUnderstandStep()">There's something I don't understand</a></div>
+        <div>- <a onClick="goToStep(1)">Back</a></div>
+      </div>
+
+      <div id="step-3" style="display: none;">
+        now, as u c <span class="your-age"></span> y/o <span class="your-name"></span> in the small still picture far far away, <br />
+        and u r ar the end of the memory, <br />
+        I want u now to step inside that memory, <br />
+        so u r <span class="your-age"></span> y/o <br />
+        and u r at the end of the memory <br />
+        and I want u <br />
+        to rewind that memory  <br />
+        as fast as u can <br />
+        all the way to the beginning <br />
+        so u hear everyone talking backwards (yes u guessed it, like a cartoon) <br />
+        c everything moving backwards in reverse <br />
+        as fast as u can <br />
+        and as u do so <br />
+        I want u to add a circus music in your mind <br />
+        let me know when u r done, and u r at the beginning of the memory <br />
+
+        <div>- <a onClick="goToStep(4)">Let's continue</a></div>
+        <div>- <a onClick="dontUnderstandStep()">There's something I don't understand</a></div>
+        <div>- <a onClick="goToStep(2)">Back</a></div>
+      </div>
+
+      <div id="step-4" style="display: none;">
+        now, did u ever think about what's bigger or a tree in different colors? <br />
+        Silly, I know, I just wanted to distract u from a moment before the next piece :) <br />
+
+        <div>- <a onClick="goToStep(5)">haha that was funny</a></div>
+        <div>- <a onClick="goToStep(5)">lol</a></div>
+        <div>- <a onClick="goToStep(5)">show me the next piece, I'm ready for ...</a></div>
+        <div>- <a onClick="goToStep(3)">Back</a></div>
+      </div>
+
+      <div id="step-5" style="display: none;">
+        Think about that same memory which u used to feel bad about in the past, before you learned this process, and try in vain to feel the same way about it as before. <br />
+        U might b surprised to find it's not as easy as before ;) <br />
+
+        <div>- <a onClick="feelWorse()">I feel worse</a></div>
+        <div>- <a onClick="feelTheSame()">I feel exactly like before</a></div>
+        <div>- <a onClick="goToStep(6)">This is great! I feel good!</a></div>
+        <div>- <a onClick="dontUnderstandStep()">There's something I don't understand</a></div>
+        <div>- <a onClick="goToStep(4)">Back</a></div>
+      </div>
+
+      <div id="step-6" style="display: none;">
+        And how good do u feel now, as u learn, that u can learn to feel better and better about what it is that used to affect in a way u no longer wish? <br />
+        1-10, how good do u feel now? <br />
+        And notice, it's interesting to notice you can not only notice where in your body u notice the good feeling first, now, where u can feel the good feeling flowing next, and when u can feel the good feeling where it feels absolutely the best. <br />
+        And if this feeling had a color <br />
+        And what color would it have? <br />
+
+        <textarea id="end-description" placeholder="describe everything as vividly as u can"></textarea>
+        <br />
+        <div>- <a onClick="goToStep(7)">That's so interesting ...</a></div>
+        <div>- <a onClick="goToStep(7)">I wonder what else I can do with this ...</a></div>
+        <div>- This is great, must <a class="share-this-page-fb">inform the others!</a></div>
+        <div>- <a onClick="goToStep(7)">Let's continue!</a></div>
+        <div>- <a onClick="dontUnderstandStep()">There's something I don't understand</a></div>
+        <div>- <a onClick="goToStep(5)">Back</a></div>
+      </div>
+
+      <div id="step-7" style="display: none;">
+        <h3>Moving Forward</h3>
+        Isn't it cool u can learn so fast? <a class="share-this-page-fb">know others</a> that can enjoy that as well? Or u want to to it again on another memory first?
+        <br />
+        <div>- <a onClick="goToStep(0)">I want to do it again on the same memory!</a></div>
+        <div>- <a onClick="goToStep(0)">I want to do it again on a different memory!</a></div>
+        <div>- <a class="share-this-page-fb">I know who could enjoy this!</a></div>
+        <div>- <a onClick="goToStep(6)">Back</a></div>
+      </div>
+
+      <hr />
+      You can do this, and more,
+      I got your back.
+        <a class="ending-avatar" href="/who-am-i-anyway/">
+          <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Trauma Reliever" />
+        </a>
+      \- [**Adam "reverse war" Goldman**](/)
+
+
+    <script>
+      el('name-age-form').addEventListener('submit', onNameAgeSubmit)
+
+      function onNameAgeSubmit(evt) {
+        evt.preventDefault()
+        populateRefSelector('.your-age', 'age-input')
+        populateRefSelector('.your-name', 'name-input')
+        goToStep(1)
+      }
+
+      function feelWorse() {
+        alert('this is rare, but if it happens it\'s usually due to a mixed feeling about the event.\n\n I\'m redirecting u to my facebook, contact me there and I will show u what to do to feel better, fast')
+        window.location.href = 'https://www.facebook.com/messages/t/adamgoldman47'
+      }
+
+      function feelTheSame() {
+        alert('sometimes it takes one "learning round" to really notice the benefits on the second round. Do it again and contact me.')
+        goToStep(0)
+      }
+    </script>
+
+  </body>
+</html>
