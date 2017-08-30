@@ -1,250 +1,218 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Adam Goldman Automated Brain Tools</title>
-    <link rel="stylesheet" href="/ghost.css">
-    <link rel="stylesheet" href="/style.css">
-    <script type="text/javascript" src="/global.js"></script>
-  </head>
-  <body>
-      <ul>
-        <li><a href="pages/feel-good-generator.html">Feel Good Generator</a></li>
-      </ul>
-    <div class="site-wrapper">
-      <div class="post">
-      <section class="post-content">
+<div id="step-0">
+  First we gonna identify the bad feeling,<br />
+  then take some control over it,<br />
+  turn it to something else,<br />
+  and explore some new possibilities,<br />
+<br />
+  Ready to learn to control your body in new ways?<br />
+<br />
+  - <a onclick="goToStep(1)">yes</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a>
+</div>
 
-      <h1>Reverse Feeling Spin v2</h1>
+<div id="step-1" style="display: none;">
+  If u feel the bad feeling at this moment, feel free now <a onclick="goToStep(2)">to skip this step</a>.<br />
+<br />
+  otherwise, as I'm very intuitive, <br />
+  I guess that up until this point you<br />
+  have experienced this intense feeling<br />
+  on a number of occasions.<br />
+<br />
+  Bring one of these times to mind now,<br />
+  and tell me...<br />
+<br />
+  - <a onclick="goToStep(2)">tell u what Adam?</a><br />
+  - <a onclick="goToStep(2)">let's continue</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(0)">Back</a>
+</div>
 
-      <div id="step-0">
-        First we gonna identify the bad feeling,<br />
-        then take some control over it,<br />
-        turn it to something else,<br />
-        and explore some new possibilities,<br />
-      <br />
-        Ready to learn to control your body in new ways?<br />
-      <br />
-        - <a onclick="goToStep(1)">yes</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a>
-      </div>
+<div id="step-2" style="display: none;">
+  which kind of a bad feeling is it?<br />
+  (i.e. anxiety, sadness, fear etc)<br />
+<br />
+  <form id="bad-feeling-type-form">
+    <div class="input-container">
+      <input id="bad-feeling-type-input" placeholder="it's a feeling of ..." required />
+    </div>
+    <button>Done. Let's continue</button>
+    <button>Onwards with the show!</button>
+  </form><br />
+<br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(1)">Back</a>
 
-      <div id="step-1" style="display: none;">
-        If u feel the bad feeling at this moment, feel free now <a click="goToStep(2)">to skip this step</a>.<br />
-      <br />
-        otherwise, as I'm very intuitive, <br />
-        I guess that up until this point you<br />
-        have experienced this intense feeling<br />
-        on a number of occasions.<br />
-      <br />
-        Bring one of these times to mind now,<br />
-        and tell me...<br />
-      <br />
-        - <a onclick="goToStep(2)">tell u what Adam?</a><br />
-        - <a onclick="goToStep(2)">let's continue</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(0)">Back</a>
-      </div>
+</div>
 
-      <div id="step-2" style="display: none;">
-        which kind of a bad feeling is it?<br />
-        (i.e. anxiety, sadness, fear etc)<br />
-      <br />
-        <form id="bad-feeling-type-form">
-          <div class="input-container">
-            <input id="bad-feeling-type-input" placeholder="it's a feeling of ..." required />
-          </div>
-          <button>Done. Let's continue</button>
-          <button>Onwards with the show!</button>
-        </form><br />
-      <br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(1)">Back</a>
+<div id="step-3" style="display: none;">
+  In a moment I'll ask u to<br />
+  close your eyes so that<br />
+  u can attend more completely to your feelings, and<br />
+  as u do so, I want u to<br />
+  think about one of these situations now,<br />
+  and notice where do u first notice the<br />
+  feeling physically in your body?<br />
+<br />
+  Close your eyes and do it now<br />
+<br />
+  <form id="bad-feeling-first-in-form">
+    <div class="input-container">
+      <input id="bad-feeling-first-in-input" placeholder="I first feel it in my ..." required />
+    </div>
+    <button>Done. Let's continue</button>
+    <button>Onwards with the show!</button>
+  </form>
+<br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(2)">Back</a>
+</div>
 
-      </div>
+<div id="step-4" style="display: none;">
+  now I want u to teach me to<br />
+  make the same feeling, and<br />
+  how would u describe it to me?<br />
+  be as specific as u can,
+  especially note:<br />
+<br />
+  - where does it start<br />
+  - which direction does it move<br />
+  - which "stops" it has along the way<br />
+  - what's it's shape and size<br />
+  - <strong>Which way does the feeling spin/spirals as it goes along this path</strong> (most important! This is the main difference between the <a href="/reverse-feeling-spin-v1/">other version of the reverse spin</a>
+<br />
+<br />
+  <form id="bad-feeling-description-form">
+    <div class="input-container">
+      <textarea id="bad-feeling-description-input" placeholder="I first feel it in my ... it's like ... and then it moves to ..." required></textarea>
+    </div>
+    <button>Done describing the bad feeling</button>
+    <button>It's interesting to put it in words</button>
+  </form>
+<br />
+<br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(3)">Back</a>
+</div>
 
-      <div id="step-3" style="display: none;">
-        In a moment I'll ask u to<br />
-        close your eyes so that<br />
-        u can attend more completely to your feelings, and<br />
-        as u do so, I want u to<br />
-        think about one of these situations now,<br />
-        and notice where do u first notice the<br />
-        feeling physically in your body?<br />
-      <br />
-        Close your eyes and do it now<br />
-      <br />
-        <form id="bad-feeling-first-in-form">
-          <div class="input-container">
-            <input id="bad-feeling-first-in-input" placeholder="I first feel it in my ..." required />
-          </div>
-          <button>Done. Let's continue</button>
-          <button>Onwards with the show!</button>
-        </form>
-      <br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(2)">Back</a>
-      </div>
+<div id="step-5" style="display: none;">
+  Now if this feeling would have a color, and what color does<br />
+  <span class="bad-feeling-type-ref"></span> has, as<br />
+<br />
+  <i><p id="bad-feeling-description-ref"></p></i>
+<br />
+  (yes I know, it's a bit of a whacky question, but just as useful ...)<br />
+<br />
+  <form id="bad-feeling-color-form">
+    <div class="input-container">
+      <input id="bad-feeling-color-input" placeholder="The color is ..." required />
+    </div>
+    <button>Got the color, let's continue</button>
+    <button>Onwards with the show!</button>
+  </form>
+  <br />
+  <br />
 
-      <div id="step-4" style="display: none;">
-        now I want u to teach me to<br />
-        make the same feeling, and<br />
-        how would u describe it to me?<br />
-        be as specific as u can,
-        especially note:<br />
-      <br />
-        - where does it start<br />
-        - which direction does it move<br />
-        - which "stops" it has along the way<br />
-        - what's it's shape and size<br />
-        - <strong>Which way does the feeling spin/spirals as it goes along this path</span> (most important! This is the main difference between the [other version of the reverse spin](/reverse-feeling-spin-v1/)
-      <br />
-        <form id="bad-feeling-description-form">
-          <div class="input-container">
-            <textarea id="bad-feeling-description-input" placeholder="I first feel it in my ... it's like ... and then it moves to ..." required></textarea>
-          </div>
-          <button>Done describing the bad feeling</button>
-          <button>It's interesting to put it in words</button>
-        </form>
-      <br />
-      <br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(3)">Back</a>
-      </div>
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(4)">Back</a>
+</div>
 
-      <div id="step-5" style="display: none;">
-        Now if this feeling would have a color, and what color does<br />
-        <span class="bad-feeling-type-ref"></span> has, as<br />
-      <br />
-        <i><p id="bad-feeling-decsription-input"></p></i><br />
-      <br />
-        (Yes I know, it's a bit of a whacky question, but just as useful ...)<br />
-      <br />
-        <form id="bad-feeling-color-form">
-          <div class="input-container">
-            <input id="bad-feeling-color-input" required />
-          </div>
-          <button>Got the color, let's continue</button>
-          <button>Onwards with the show!</button>
-        </form>
+<div id="step-6" style="display: none;">
+  good<br />
+  now<br />
+  here's what I want u to do<br />
+  in a moment I'm gonna ask u<br />
+  to take a deep breath,<br />
+  close your eyes and<br />
+  reverse the direction of spin,<br />
+  change the color to a color you like better,<br />
+  and add sparkles to it,<br />
+  and find out what happens.<br />
+<br />
+  Now take a deep breath,<br />
+  close your eyes,<br />
+  and do it now<br />
+<br />
+  - <a onclick="goToStep(7)">change color? check. reverse spin? check. Sparkles? check. let's continue!</a><br />
+  - <a onclick="goToStep(7)">Done. Let's proceed</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(5)">Back</a>
 
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(4)">Back</a>
-      </div>
+</div>
 
-      <div id="step-6" style="display: none;">
-        good<br />
-        now<br />
-        here's what I want u to do<br />
-        in a moment I'm gonna ask u<br />
-        to take a deep breath,<br />
-        close your eyes and<br />
-        reverse the direction of spin,<br />
-        change the color to a color you like better,<br />
-        and add sparkles to it,<br />
-        and find out what happens.<br />
-      <br />
-        Now take a deep breath,<br />
-        close your eyes,<br />
-        and do it now<br />
-      <br />
-        - <a onclick="goToStep(7)">change color? check. reverse spin? check. Sparkles? check. let's continue!</a><br />
-        - <a onclick="goToStep(7)">Done. Let's proceed</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(5)">Back</a>
+<div id="step-7" style="display: none;">
+  wonderful,
+  as u spin it faster and faster in the new direction,<br />
+  and allow the new color to spread, notice if there's<br />
+  anything still left from the old feeling of <span class="bad-feeling-type-ref"></span>,<br />
+  and how much better do u feel now?<br />
+<br />
+  - <a onclick="goToStep(8)">This is amazing! No more <span class="bad-feeling-type-ref"></span>!</a><br />
+  - <a onclick="goToStep(8)">Yea that's better</a><br />
+  - <a onclick="goToStep(8)">The feeling changed to something new</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(6)">Back</a><br />
+<br />
+  btw, if u feel exactly the same, <a onclick="goToStep(0)">run the process again first</a>,
+  then try the other version of the reverse spin.
+</div>
 
-      </div>
+<div id="step-8" style="display: none;">
+  How interesting u can<br />
+  learn to learn to turn around<br />
+  your feelings as well as fast<br />
+  into something new<br />
+  (dare I say exciting/intruging?)<br />
+  just like that, by playing with<br />
+  colors and sensations?<br />
+<br />
+  by now u might realize u can begin to imagine what<br />
+  it is that's more in your body u did not explore yet<br />
+  u will b surprised how much more is yet to come as<br />
+  u open to more and more possibilties now...<br />
+<br />
+  - This is beneficial and <a class="share-this-page-fb">I want more to experience this</a><br />
+  - Let's <a onclick="goToStep(0)">do it again on the same</a> feeling!<br />
+  - I feel much better, I want to <a href="/i-dont-charge-i-accept/">give back</a><br />
+  - Let's <a onclick="goToStep(0)">do it again on a different</a> feeling!<br />
+  - I want to <a href="/reverse-feeling-spin-v1/">try the other version</a> of the reverse spin<br />
+  - <a onclick="goToStep(7)">Back</a>
+</div>
 
-      <div id="step-7" style="display: none;">
-        wonderful,
-        as u spin it faster and faster in the new direction,<br />
-        and allow the new color to spread, notice if there's<br />
-        anything still left from the old feeling of <span class="bad-feeling-type-ref"></span>,<br />
-        and how much better do u feel now?<br />
-      <br />
-        - <a onclick="goToStep(8)">This is amazing! No more <span class="bad-feeling-type-ref"></span>!</a><br />
-        - <a onclick="goToStep(8)">Yea that's better</a><br />
-        - <a onclick="goToStep(8)">The feeling changed to something new</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(6)">Back</a><br />
-      <br />
-        btw, if u feel exactly the same, <a onclick="goToStep(0)">run the process again first</a>,
-        then try the other version of the reverse spin.
-      </div>
+<hr />
 
-      <div id="step-8" style="display: none;">
-        How interesting u can<br />
-        learn to learn to turn around<br />
-        your feelings as well as fast<br />
-        into something new<br />
-        (dare I say exciting/intruging?)<br />
-        just like that, by playing with<br />
-        colors and sensations?<br />
-      <br />
-        by now u might realize u can begin to imagine what<br />
-        it is that's more in your body u did not explore yet<br />
-        u will b surprised how much more is yet to come as<br />
-        u open to more and more possibilties now...<br />
-      <br />
-        - This is beneficial. <a class="share-this-page-fb">More people should do this</a><br />
-        - Let's <a onclick="goToStep(0)">do it again on the same</a> feeling!<br />
-        - I feel much better, I want to <a href="/i-dont-charge-i-accept/">give back</a><br />
-        - Let's <a onclick="goToStep(0)">do it again on a different</a> feeling!<br />
-        - I want to <a href="/reverse-spin-v2/">try the second version</a> of the reverse spin<br />
-        - <a onclick="goToStep(7)">Back</a>
-      </div>
+You can do this, and more,
+<a href="/who-am-i-anyway/">I got your back.</a>
+<a class="ending-avatar" href="/who-am-i-anyway/">
+  <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Reverse Spin" />
+</a>
+\- [**Adam "reverse spin" Goldman**](/)
 
-      <hr />
+<script>
+  el('bad-feeling-type-form').addEventListener('submit', onBadFeelingTypeSubmit)
+  el('bad-feeling-first-in-form').addEventListener('submit', onBadFeelingFirstInSubmit)
+  el('bad-feeling-description-form').addEventListener('submit', onBadFeelingDescriptionSubmit)
+  el('bad-feeling-color-form').addEventListener('submit', onBadFeelingColorSubmit)
 
-      You can do this, and more,
-      <a href="/who-am-i-anyway/">I got your back.</a>
-      <a class="ending-avatar" href="/who-am-i-anyway/">
-        <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Reverse Spin" />
-      </a>
-      \- [**Adam "reverse spin" Goldman**](/)
+  function onBadFeelingTypeSubmit(evt) {
+    evt.preventDefault()
+    populateRefSelector('.bad-feeling-type-ref', 'bad-feeling-type-input')
+    goToStep(3)
+  }
 
-      <script>
-        el('bad-feeling-type-form').addEventListener('submit', onBadFeelingTypeSubmit)
-        el('bad-feeling-first-in-form').addEventListener('submit', onBadFeelingFirstInSubmit)
-        el('bad-feeling-description-form').addEventListener('submit', onBadFeelingDescriptionSubmit)
-        el('bad-feeling-color-form').addEventListener('submit', onBadFeelingColorSubmit)
+  function onBadFeelingFirstInSubmit(evt) {
+    evt.preventDefault()
+    goToStep(4)
+  }
 
-        function onBadFeelingTypeSubmit(evt) {
-          evt.preventDefault()
-          document.querySelectorAll('.bad-feeling-type-ref').forEach(node => node.innerHTML = el('bad-feeling-type-input').value)
-          goToStep(3)
-        }
+  function onBadFeelingDescriptionSubmit(evt) {
+    evt.preventDefault()
+    populateRefSelector('#bad-feeling-description-ref', 'bad-feeling-description-input')
+    goToStep(5)
+  }
 
-        function onBadFeelingFirstInSubmit(evt) {
-          evt.preventDefault()
-          goToStep(4)
-        }
-
-        function onBadFeelingDescriptionSubmit(evt) {
-          evt.preventDefault()
-          document.querySelectorAll('.bad-feeling-description-ref').forEach(node => node.innerHTML = el('bad-feeling-description-input').value)
-          goToStep(5)
-        }
-
-        function onBadFeelingColorSubmit(evt) {
-          evt.preventDefault()
-          document.querySelectorAll('.bad-feeling-color-ref').forEach(node => node.innerHTML = el('bad-feeling-color-input').value)
-          goToStep(6)
-        }
-
-        function goToStep(n) {
-          document.querySelectorAll('[id^="step"]').forEach(node => node.style.display = 'none')
-          el(`step-${n}`).style.display = 'block'
-          scrollTo(document.body, 0, 300)
-        }
-
-        function dontUnderstandStep() {
-          alert('follow the steps as best u can now, and we\'ll talk about it later')
-        }
-
-        function el(id) {
-          return document.getElementById(id)
-        }
-      </script>
-  </body>
-</html>
+  function onBadFeelingColorSubmit(evt) {
+    evt.preventDefault()
+    populateRefSelector('.bad-feeling-color-ref', 'bad-feeling-color-input')
+    goToStep(6)
+  }
+</script>

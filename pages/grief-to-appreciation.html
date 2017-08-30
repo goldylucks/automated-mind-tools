@@ -1,272 +1,255 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Adam Goldman Automated Brain Tools</title>
-    <link rel="stylesheet" href="/ghost.css">
-    <link rel="stylesheet" href="/style.css">
-    <script type="text/javascript" src="/global.js"></script>
-  </head>
-  <body>
-      <ul>
-        <li><a href="pages/feel-good-generator.html">Feel Good Generator</a></li>
-      </ul>
-    <div class="site-wrapper">
-      <div class="post">
-      <section class="post-content">
+<div id="step-0">
+  u have someone u used to have in your life,<br />
+  that as u think of him or her,<br />
+  u don't feel yet the warmth gratitude,<br />
+  appreciation, and good times u shared,<br />
+  but still feel the old feelings of loss,<br />
+  and before we turn this around u might wonder ...<br />
+  <br />
+  - <a onclick="goToStep(1)">How is this going to work?</a>
+  <br />
+  (btw, the text in this page is formatted in a special way to induce a special change, it's grammatically "incorrect" for a reason)
+</div>
+<div id="step-1" style="display: none;">
+  I'm glad u asked,<br />
+  so here's how it's going to work,<br />
+  as I've been studying human behavior, organisms,<br />
+  how society shapes behavior, communication,<br />
+  and the greatest learning machine of all, the human brain,<br />
+  I'm going to give u some things to try,<br />
+  and whatever works for u u get to keep,<br />
+  whatever doesn't u file away in the<br />
+  "thing's I've tried and haven't worked for me yet."<br />
+  <br />
+  Sounds good?<br />
+  <br />
+  - <a onclick="goToStep(2)">Good indeed, let's continue.</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(0)">Back</a><br />
+</div>
+<div id="step-2" style="display: none;">
+  I want u to quickly share with me the following:<br />
+  <br />
+  <form id="age-and-loss-person-form">
+    <div class="input-container">
+      <input id="age-input" max="99" min="0" placeholder="What is your age?" required="" type="number">
+    </div>
+    <div class="input-container">
+      <input id="loss-person-name-input" placeholder="how do u call that person in question?" required="">
+    </div>
+    <div class="select-container">
+      <select id="loss-person-gender-input" required>
+        <option value="" selected>He or She?</option>
+        <option value="male">
+          He's a he
+        </option>
+        <option value="female">
+          She's a she
+        </option>
+      </select>
+    </div><button>Let's continue</button>
+  </form>
+  <br />
+  <br />
+  - <a onclick="goToStep(1)">Back</a><br />
+</div>
+<div id="step-3" style="display: none;">
+  Good,<br />
+  now,<br />
+  in your <span class="your-age"></span> years on this odd planet, u have met many people,<br />
+  and some of them shared good memories with you,<br />
+  and were meaningful to you,<br />
+  now,<br />
+  as u think about some of them,<br />
+  think of a person that is no longer in your life,<br />
+  maybe he/she is dead, maybe not,<br />
+  but that person is no longer in your life,<br />
+  but when u remember him or her,<br />
+  u have a good feeling,<br />
+  appreciate the time u had together,<br />
+  maybe it's a friend u used to have which makes u laugh,<br />
+  maybe it's a meaningful teacher,<br />
+  or a loved family member,<br />
+  now,<br />
+  as u think of that person, share the following:<br />
+  <br />
+  <form id="good-memory-person-form" name="good-memory-person-form">
+    <div class="input-container">
+      <input id="good-memory-name-input" placeholder="What's her / his name?" required="">
+    </div>
+    <div class="select-container">
+      <select id="good-memory-gender-input" required>
+        <option value="" selected>He or She?</option>
+        <option value="male">
+          He's a he
+        </option>
+        <option value="female">
+          She's a she
+        </option>
+      </select>
+    </div><button>Let's continue</button>
+  </form>
+  <br /><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(2)">Back</a><br />
+</div>
+<div id="step-4" style="display: none;">
+  good,<br />
+  now,<br />
+  as u think of <span class="good-memory-person-name-ref"></span> now, and c all the good times u shared together,<br />
+  feel the gratitude and appreciation for having <span class="good-memory-person-himher-ref"></span> in your life,<br />
+  and all u learned and carry with u now and forever,<br />
+  notice u can not only notice where in your body u<br />
+  feel the good feeling first,<br />
+  as u can also notice where in your body u<br />
+  feel the good feeling flowing and spreading next,<br />
+  and u can begin to notice where in your body u feel the good feeling where u feel good absolutely the best,<br />
+  and as u do so,<br />
+  and u are looking at <span class="good-memory-person-himher-ref"></span>,<br />
+  notice what is <span class="good-memory-person-heshe-ref"></span> doing?<br />
+  where do u c <span class="good-memory-person-himher-ref"></span>?<br />
+  is <span class="good-memory-person-heshe-ref"></span> looking at you?<br />
+  is <span class="good-memory-person-heshe-ref"></span> smiling at you?<br />
+  do u hear <span class="good-memory-person-himher-ref"></span> talking to you?<br />
+  and as u do so, u might notice if<br />
+  the good feeling is cool or u prefer to feel it warmer,<br />
+  and the more u feel that good feeling now,<br />
+  the more it can fill you,<br />
+  as u begin to realize u can learn to learn new ways,<br />
+  to feel good,<br />
+  now,<br />
+  and appreciation,<br />
+  and describe this good feeling vivdly in as much detail as humanly possible,<br />
+  (u r human, are you not?)<br />
+  <br />
+  <textarea placeholder="the more u share here the better u will feel"></textarea><br />
+  - <a onclick="goToStep(5)">I like this good feeling, let's continue</a><br />
+  - <a onclick="goToStep(5)">I like to learn to feel even better</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(3)">Back</a><br />
+</div>
+<div id="step-5" style="display: none;">
+  Good,<br />
+  now,<br />
+  keep making the good feeling,<br />
+  and as u do so,<br />
+  in that same way u think of <span class="good-memory-person-name-ref"></span>,<br />
+  I want u to think of <span class="loss-person-name-ref"></span>,<br />
+  so u c <span class="loss-person-himher-ref"></span> in the same place, colors, and angle as <span class="good-memory-person-name-ref"></span>,<br />
+  hear <span class="loss-person-name-ref"></span> in the same way and from the same direction as <span class="good-memory-person-name-ref"></span>,<br />
+  the way that makes u feel the appreciation,<br />
+  and keep making the good feeling,<br />
+  and as u do so, notice u might notice the good feeling spreads even more,<br />
+  and u might notice u can notice the good feeling intensifies,<br />
+  and how good do u feel now as u c <span class="loss-person-name-ref"></span> in this way?<br />
+  <br />
+  - <a onclick="goToStep(6)">I love <span class="loss-person-name-ref"></span> and I love this feeling,</a><br />
+  - <a onclick="exactlyTheSame()">It's exactly the same as before</a><br />
+  - <a onclick="goToStep(6)">This is so much better ...</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(4)">Back</a><br />
+</div>
+<div id="step-6" style="display: none;">
+  Good,<br />
+  now,<br />
+  isn't it interesting,<br />
+  to learn,<br />
+  u can learn to learn new ways,<br />
+  to feel good,<br />
+  now,<br />
+  and then,<br />
+  in such a short time,<br />
+  with little to no effort,<br />
+  by playing with pictures and sounds in your mind?<br />
+  <br />
+  did u expect to feel all those good feelings a few minutes ago?<br />
+  <br />
+  And I guess I can also not help but wonder,<br />
+  if u can wander around good feelings,<br />
+  as u wonder how much more wonderfull feelings u haven't experienced yet,<br />
+  u will b surprised,<br />
+  as u begin to realize u can feel good<br />
+  in more ways than u have ever wondered before,<br />
+  as u wander more and more around good feelings, and if u are not careful,<br />
+  u might end up stuck in good feelings only,<br />
+  for the rest of your life (and then some ...)<br />
+  <br />
+  - <a onclick="goToStep(7)">Lost in good feelings? oh no, anything but that!</a><br />
+  - This is great, <a class="share-this-page-fb">I want more to experience this gratitude and peace</a><br />
+  - <a onclick="goToStep(7)">I'm curious how much I can feel good more and more</a><br />
+  - <a href="/i-dont-charge-i-accept/">This is wonderful, I wish to give back</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(5)">Back</a><br />
+</div>
+<div id="step-7" style="display: none;">
+  This page will always be here for u so that,<br />
+  u can easily enjoy it more if u bookmark it,<br />
+  always available for u and your loved ones,<br />
+  and everyone else u wish to <a class="share-this-page-fb">share</a> this good feeling now with.<br />
+  continue to enjoy what u have learned and <a href="/i-dont-charge-i-accept/" target="_blank">give back</a> just as much as u wish,<br />
+  and take the next action to further improce your life!
+  <br />
+  <br />
+  - <a onclick="goToStep(0)">I want to do it again with the same loved one</a><br />
+  - <a onclick="goToStep(0)">I want to do it again with a different loved one</a><br />
+  - <a href="/i-dont-charge-i-accept/">I've never thought this is possible, how can I give back?</a><br />
+  - This is great, <a class="share-this-page-fb">I want more to experience this gratitude and peace</a><br />
+  - <a href="/contact/">I want to share with you my experinece Adam!</a><br />
+  - <a onclick="goToStep(6)">Back</a><br />
 
-      <h1>Grief To Appreciation</h1>
+  <br />
+</div>
+<hr />
+You can do this, and more,
+I got your back.
+  <a class="ending-avatar" href="/who-am-i-anyway/">
+    <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Grief" />
+  </a>
+\- [**Adam "eternal presence" Goldman**](/)
 
-      <div id="step-0">
-        Hello friend.<br />
-        <a href="/who-am-i-anyway/" target="_blank">Adam</a> here, nice to e-meet u.<br />
-        <br />
-        u have someone u used to have in your life,<br />
-        that as u think of him or her,<br />
-        u don't feel yet the warmth gratitude, appreciation, and good times u shared,<br />
-        but still feel the old feelings of loss,<br />
-        and before we turn this around u might wonder ...<br />
-        <br />
-        - <a onclick="goToStep(1)">How is this going to work?</a>
-        <br />
-        (btw, the text in this page is formatted in a special way to induce a special change, it's grammatically "incorrect" for a reason)
-      </div>
-      <div id="step-1" style="display: none;">
-        I'm glad u asked,<br />
-        so here's how it's going to work,<br />
-        as I've been studying human behavior, organisms,<br />
-        how society shapes behavior, communication,<br />
-        and the greatest learning machine of all, the human brain,<br />
-        I'm going to give u some things to try,<br />
-        and whatever works for u u get to keep,<br />
-        whatever doesn't u file away in the<br />
-        "thing's I've tried and haven't worked for me yet."<br />
-        <br />
-        Sounds good?<br />
-        <br />
-        - <a onclick="goToStep(2)">Good indeed, let's continue.</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(0)">Back</a><br />
-      </div>
-      <div id="step-2" style="display: none;">
-        I want u to quickly share with me the following:<br />
-        <form id="age-and-loss-person-form" name="age-and-loss-person-form">
-          <div class="input-container">
-            <input id="age-input" max="99" min="0" placeholder="What is your age?" required="" type="number">
-          </div>
-          <div class="input-container">
-            <input id="loss-person-name-input" placeholder="how do u call that person in question?" required="">
-          </div>
-          <div class="select-container">
-            <select id="loss-person-gender-input" required>
-              <option value="" selected>He or She?</option>
-              <option value="male">
-                He's a he
-              </option>
-              <option value="female">
-                She's a she
-              </option>
-            </select>
-          </div><button>Let's continue</button>
-        </form>
-        <br />
-        <br />
-        - <a onclick="goToStep(1)">Back</a><br />
-      </div>
-      <div id="step-3" style="display: none;">
-        Good,<br />
-        now,<br />
-        in your <span class="your-age"></span> years on this odd planet, u have met many people,<br />
-        and some of them shared good memories with you,<br />
-        and were meaningful to you,<br />
-        now,<br />
-        as u think about some of them,<br />
-        think of a person that is no longer in your life,<br />
-        maybe he/she is dead, maybe not,<br />
-        but that person is no longer in your life,<br />
-        but when u remember him or her,<br />
-        u have a good feeling,<br />
-        appreciate the time u had together,<br />
-        maybe it's a friend u used to have which makes u laugh,<br />
-        maybe it's a meaningful teacher,<br />
-        or a loved family member,<br />
-        now,<br />
-        as u think of that person, share the following:<br />
-        <br />
-        <form id="good-memory-person-form" name="good-memory-person-form">
-          <div class="input-container">
-            <input autofocus="" id="good-memory-name-input" placeholder="What's her / his name?" required="">
-          </div>
-          <div class="select-container">
-            <select id="good-memory-gender-input" required>
-              <option value="" selected>He or She?</option>
-              <option value="male">
-                He's a he
-              </option>
-              <option value="female">
-                She's a she
-              </option>
-            </select>
-          </div><button>Let's continue</button>
-        </form>
-        <br /><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(2)">Back</a><br />
-      </div>
-      <div id="step-4" style="display: none;">
-        good,<br />
-        now,<br />
-        as u think of <span class="good-memory-person-name-ref"></span> now, and c all the good times u shared together,<br />
-        feel the gratitude and appreciation for having <span class="good-memory-person-himher-ref"></span> in your life,<br />
-        and all u learned and carry with u now and forever,<br />
-        notice u can not only notice where in your body u<br />
-        feel the good feeling first,<br />
-        as u can also notice where in your body u<br />
-        feel the good feeling flowing and spreading next,<br />
-        and u can begin to notice where in your body u feel the good feeling where u feel good absolutely the best,<br />
-        and as u do so,<br />
-        and u are looking at <span class="good-memory-person-himher-ref"></span>,<br />
-        notice what is <span class="good-memory-person-heshe-ref"></span> doing?<br />
-        where do u c <span class="good-memory-person-himher-ref"></span>?<br />
-        is <span class="good-memory-person-heshe-ref"></span> looking at you?<br />
-        is <span class="good-memory-person-heshe-ref"></span> smiling at you?<br />
-        do u hear <span class="good-memory-person-himher-ref"></span> talking to you?<br />
-        and as u do so, u might notice if<br />
-        the good feeling is cool or u prefer to feel it warmer,<br />
-        and the more u feel that good feeling now,<br />
-        the more it can fill you,<br />
-        as u begin to realize u can learn to learn new ways,<br />
-        to feel good,<br />
-        now,<br />
-        and appreciation,<br />
-        and describe this good feeling vivdly in as much detail as humanly possible,<br />
-        (u r human, are you not?)<br />
-        <br />
-        <textarea placeholder="the more u share here the better u will feel"></textarea><br />
-        - <a onclick="goToStep(5)">I like this good feeling, let's continue</a><br />
-        - <a onclick="goToStep(5)">I like to learn to feel even better</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(3)">Back</a><br />
-      </div>
-      <div id="step-5" style="display: none;">
-        Good,<br />
-        now,<br />
-        keep making the good feeling,<br />
-        and as u do so,<br />
-        in that same way u think of <span class="good-memory-person-name-ref"></span>,<br />
-        I want u to think of <span class="loss-person-name-ref"></span>,<br />
-        so u c <span class="loss-person-himher-ref"></span> in the same place, colors, and angle as <span class="good-memory-person-name-ref"></span>,<br />
-        hear <span class="loss-person-name-ref"></span> in the same way and from the same direction as <span class="good-memory-person-name-ref"></span>,<br />
-        the way that makes u feel the appreciation,<br />
-        and keep making the good feeling,<br />
-        and as u do so, notice u might notice the good feeling spreads even more,<br />
-        and u might notice u can notice the good feeling intensifies,<br />
-        and how good do u feel now as u c <span class="loss-person-name-ref"></span> in this way?<br />
-        <br />
-        - <a onclick="goToStep(6)">I love <span class="loss-person-name-ref"></span> and I love this feeling,</a><br />
-        - <a onclick="exactlyTheSame()">It's exactly the same as before</a><br />
-        - <a onclick="goToStep(6)">This is so much better ...</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(4)">Back</a><br />
-      </div>
-      <div id="step-6" style="display: none;">
-        Good,<br />
-        now,<br />
-        isn't it interesting,<br />
-        to learn,<br />
-        u can learn to learn new ways,<br />
-        to feel good,<br />
-        now,<br />
-        and then,<br />
-        in such a short time,<br />
-        with little to no effort,<br />
-        by playing with pictures and sounds in your mind?<br />
-        <br />
-        did u expect to feel all those good feelings a few minutes ago?<br />
-        <br />
-        And I guess I can also not help but wonder,<br />
-        if u can wander around good feelings,<br />
-        as u wonder how much more wonderfull feelings u haven't experienced yet,<br />
-        u will b surprised,<br />
-        as u begin to realize u can feel good<br />
-        in more ways than u have ever wondered before,<br />
-        as u wander more and more around good feelings, and if u are not careful,<br />
-        u might end up stuck in good feelings only,<br />
-        for the rest of your life (and then some ...)<br />
-        <br />
-        - <a onclick="goToStep(7)">Lost in good feelings? oh no, anything but that!</a><br />
-        - This is great, <a class="share-this-page-fb">I want more to experience this gratitude and peace</a><br />
-        - <a onclick="goToStep(7)">I'm curious how much I can feel good more and more</a><br />
-        - <a href="/i-dont-charge-i-accept/">This is wonderful, I wish to give back</a><br />
-        - <a onclick="dontUnderstandStep()">I don't understand</a><br />
-        - <a onclick="goToStep(5)">Back</a><br />
-      </div>
-      <div id="step-7" style="display: none;">
-        This page will always be here for u so that,<br />
-        u can easily enjoy it more if u bookmark it,<br />
-        always available for u and your loved ones,<br />
-        and everyone else u wish to <a class="share-this-page-fb">share</a> this good feeling now with.<br />
-        continue to enjoy what u have learned and <a href="/i-dont-charge-i-accept/" target="_blank">give back</a> just as much as u wish,<br />
-        and take the next action to further improce your life!
-        <br />
-        <br />
-        - <a onclick="goToStep(0)">I want to do it again with the same loved one</a><br />
-        - <a onclick="goToStep(0)">I want to do it again with a different loved one</a><br />
-        - <a href="/i-dont-charge-i-accept/">I've never thought this is possible, how can I give back?</a><br />
-        - This is great, <a class="share-this-page-fb">I want more to experience this gratitude and peace</a><br />
-        - <a href="/contact/">I want to share with you my experinece Adam!</a><br />
-        - <a onclick="goToStep(6)">Back</a><br />
+<pre>
+<script type="text/javascript">
+el('age-and-loss-person-form').addEventListener('submit', onAgeAndLossPersonSubmit)
+el('good-memory-person-form').addEventListener('submit', onGoodMemoryPersonSubmit)
 
-        <br />
-      </div>
-      <hr />
-      You can do this, and more,
-      I got your back.
-        <a class="ending-avatar" href="/who-am-i-anyway/">
-          <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Grief" />
-        </a>
-      \- [**Adam "warm gratitude" Goldman**](/)
+function onAgeAndLossPersonSubmit(evt) {
+  evt.preventDefault()
+  const age = el('age-input').value
+  const lossPersonName = el('loss-person-name-input').value
+  const lossPersonGender = el('loss-person-gender-input').value
+  let lossPersonHeshe = ''
+  let lossPersonHimher = ''
+  if (lossPersonGender === 'male') { lossPersonHeshe = 'he' }
+  else { lossPersonHeshe = 'she' }
+  if (lossPersonGender === 'male') { lossPersonHimher = 'him' }
+  else { lossPersonHimher = 'her' }
 
-    <script type="text/javascript">
-      el('age-and-loss-person-form').addEventListener('submit', onAgeAndLossPersonSubmit)
-      el('good-memory-person-form').addEventListener('submit', onGoodMemoryPersonSubmit)
+  document.querySelectorAll('.your-age').forEach(node => node.innerHTML = age)
+  document.querySelectorAll('.loss-person-name-ref').forEach(node => node.innerHTML = lossPersonName)
+  document.querySelectorAll('.loss-person-heshe-ref').forEach(node => node.innerHTML = lossPersonHeshe)
+  document.querySelectorAll('.loss-person-himher-ref').forEach(node => node.innerHTML = lossPersonHimher)
+  goToStep(3)
+}
 
-      function onAgeAndLossPersonSubmit(evt) {
-        evt.preventDefault()
-        const age = el('age-input').value
-        const lossPersonName = el('loss-person-name-input').value
-        const lossPersonGender = el('loss-person-gender-input').value
-        let lossPersonHeshe = ''
-        let lossPersonHimher = ''
-        if (lossPersonGender === 'male') { lossPersonHeshe = 'he' }
-        else { lossPersonHeshe = 'she' }
-        if (lossPersonGender === 'male') { lossPersonHimher = 'him' }
-        else { lossPersonHimher = 'her' }
+function onGoodMemoryPersonSubmit(evt) {
+  evt.preventDefault()
+  const goodMemoryPersonName = el('good-memory-name-input').value
+  const goodMemoryPersonGender = el('good-memory-gender-input').value
+  const goodMemoryPersonHeshe = goodMemoryPersonGender === 'male' ? 'he' : 'she'
+  const goodMemoryPersonHimher = goodMemoryPersonGender === 'male' ? 'him' : 'her'
+  document.querySelectorAll('.good-memory-person-name-ref').forEach(node => node.innerHTML = goodMemoryPersonName)
+  document.querySelectorAll('.good-memory-person-heshe-ref').forEach(node => node.innerHTML = goodMemoryPersonHeshe)
+  document.querySelectorAll('.good-memory-person-himher-ref').forEach(node => node.innerHTML = goodMemoryPersonHimher)
+  goToStep(4)
+}
 
-        document.querySelectorAll('.your-age').forEach(node => node.innerHTML = age)
-        document.querySelectorAll('.loss-person-name-ref').forEach(node => node.innerHTML = lossPersonName)
-        document.querySelectorAll('.loss-person-heshe-ref').forEach(node => node.innerHTML = lossPersonHeshe)
-        document.querySelectorAll('.loss-person-himher-ref').forEach(node => node.innerHTML = lossPersonHimher)
-        goToStep(3)
-      }
+function exactlyTheSame () {
+  alert('go through the process again, and if you still dont feel improvement,  contact me and I\'ll do it with u')
+  goToStep(0)
+}
+</script>
+</pre>
 
-      function onGoodMemoryPersonSubmit(evt) {
-        evt.preventDefault()
-        const goodMemoryPersonName = el('good-memory-name-input').value
-        const goodMemoryPersonGender = el('good-memory-gender-input').value
-        const goodMemoryPersonHeshe = goodMemoryPersonGender === 'male' ? 'he' : 'she'
-        const goodMemoryPersonHimher = goodMemoryPersonGender === 'male' ? 'him' : 'her'
-        document.querySelectorAll('.good-memory-person-name-ref').forEach(node => node.innerHTML = goodMemoryPersonName)
-        document.querySelectorAll('.good-memory-person-heshe-ref').forEach(node => node.innerHTML = goodMemoryPersonHeshe)
-        document.querySelectorAll('.good-memory-person-himher-ref').forEach(node => node.innerHTML = goodMemoryPersonHimher)
-        goToStep(4)
-      }
-
-      function exactlyTheSame () {
-        alert('go through the process again, and if you still dont feel improvement,  contact me and I\'ll do it with u')
-        goToStep(0)
-      }
-    </script>
-
-  </body>
-</html>
+<style>
+  pre { display: none; }
+</style>

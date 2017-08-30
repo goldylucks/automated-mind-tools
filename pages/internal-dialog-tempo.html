@@ -1,0 +1,249 @@
+<div id="step-0">
+  So there are some things u say to yourself over and over that don't make u feel the way u want yet, some of the most common ones are:
+<br />
+<br />
+  <ul style="font-style: italic;">
+    <li>I'm not good enough</li>
+    <li>you don't deserve ...</li>
+    <li>what if ...</li>
+  </ul>
+  and before we turn this around u might wonder ...
+  <br />
+  <br />
+  - <a onclick="goToStep(1)">How is this going to work?</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+</div>
+
+<div id="step-1" style="display: none;">
+  I'm glad u asked,<br />
+  so here's how it's going to work,<br />
+  as I've been studying human behavior, organisms,<br />
+  how society shapes behavior, communication,<br />
+  and the greatest learning machine of all, the human brain,<br />
+  I'm going to give u some things to try,<br />
+  and whatever works for u u get to keep,<br />
+  whatever doesn't u file away in the<br />
+  "thing's I've tried and haven't worked for me yet."<br />
+  <br />
+  Sounds good?<br />
+  <br />
+  - <a onclick="goToStep(2)">Good indeed, let's continue</a><br />
+  - <a onclick="dontUnderstandStep()">I don't understand</a><br />
+  - <a onclick="goToStep(0)">Back</a><br />
+</div>
+
+<div id="step-2" style="display: none;">
+  Pick one the things u say to yourself which make u feel not the way u want, and write it here:
+  <br />
+  <br />
+  <form id="phrase-form">
+    <div class="input-container">
+      <input id="phrase-input" placeholder="The phrase I say to myself is ..." required />
+    </div>
+    <br />
+    <button>lets continue</button><br />
+    <br />
+    - <a onclick="goToStep(1)">Back</a><br />
+  </form>
+</div>
+
+<div id="step-3" style="display: none;">
+  So the phrase you have said to yourself is,
+  <br />
+  <br />
+  <i><span class="phrase-ref"></span></i>
+  <br />
+  <br />
+  When you have said this to yourself,
+  do you say it in your normal conversational speaking voice,
+  or is it said at a faster tempo?
+  <br />
+  <br />
+  - <a onclick="goToStep(4)">normal tempo</a><br />
+  - <a onclick="goToStep(4)">fast tempo</a><br />
+  - <a onclick="goToStep(2)">back</a>
+</div>
+
+<div id="step-4" style="display: none;">
+  say this phrase exactly as you have done to date and notice how you feel in response to doing so
+  <br /><br />
+  <form id="normal-tempo-describe-form">
+    <textarea placeholder="when I say this phrase to myself at normal tempo I feel ..." required></textarea>
+    <br /><br />
+    <button>done describing to date</button><br />
+    <br />
+    - <a onclick="goToStep(3)">back</a>
+  </form>
+</div>
+
+<div id="step-5" style="display: none;">
+  Now I'm going to flash the phrase on the screen at a certain tempo, and for now just notice the speed, don't do anything else.
+  <br />
+  <br />
+  <div id="flash-slow-buttons">
+    - <a onclick="flashSlow()">ok I'm ready</a><br />
+    - <a onclick="flashSlow()">Flash me baby!</a><br />
+  </div>
+  <br />
+  <h2 id="flash-slow" style="font-weight: italic;"></h2>
+  <div id="flash-slow-nav" style="display: none;">
+    <p>now say this phrase out loud at the same speed I've just flashed it and notice what's different</p>
+  - <a onclick="goToStep(6)">I've said the phrase to myself in that speed, what's next?</a><br />
+  - <a onclick="goToStep(6)">that's much better</a><br />
+  - <a onclick="flashSlow()">flash me again</a><br />
+  - <a onclick="goToStep(4)">back</a>
+  </div>
+</div>
+
+<div id="step-6" style="display: none;">
+  Describe the difference between the way u used to say it to yourself until now, and saying it to yourself like u do now:
+  <br />
+  <br />
+  <form id="slow-tempo-describe-form">
+    <textarea placeholder="as I'm saying it to myself now I notice the difference is ..." required></textarea>
+    <br />
+    <br />
+    <button>done describing the difference</button><br />
+    <br />
+    - <a onclick="goToStep(5)">back</a>
+  </form>
+</div>
+
+<div id="step-7" style="display: none;">
+  Oddly enough, now I'm going to flash the phrase on the screen even slower, and for now just notice the speed, don't do anything else.
+  <br />
+  <br />
+  <div id="flash-slower-buttons">
+    - <a onclick="flashSlower()">ok I'm ready</a><br />
+    - <a onclick="flashSlower()">Flash me baby!</a><br />
+  </div>
+  <br />
+  <h2 id="flash-slower" style="font-weight: italic;"></h2>
+  <div id="flash-slower-nav" style="display: none;">
+    <p>now say this phrase out loud at the same speed I've just flashed it and notice what's different</p>
+  - <a onclick="goToStep(8)">It's the same</a><br />
+  - <a onclick="goToStep(8)">that's even better</a><br />
+  - <a onclick="goToStep(8)">It's almost laughable now</a><br />
+  - <a onclick="flashSlower()">flash me again</a><br />
+  - <a onclick="goToStep(6)">back</a>
+  </div>
+</div>
+
+<div id="step-8" style="display: none;">
+  Describe the difference between the way u used to say it to yourself until now, and saying it to yourself like u do now:
+  <br />
+  <br />
+  <form id="slower-tempo-describe-form">
+    <textarea placeholder="as I'm saying it to myself now I notice the difference is ..." required></textarea>
+    <br />
+    <br />
+    <button>done describing the difference</button><br />
+    <br />
+    - <a onclick="goToStep(7)">back</a>
+  </form>
+</div>
+
+<div id="step-9" style="display: none;">
+  When you try now to think of this as you used to, what are you noticing that is different?
+  <br />
+  <br />
+  - <a onclick="goToStep(10)">it's ridiculous now</a><br />
+  - <a onclick="goToStep(10)">it's much better</a><br />
+  - <a onclick="exactlyTheSame()">it's exactly the same</a><br />
+  - <a onclick="goToStep(10)">it's hummurous, almost laughable!</a><br />
+  - <a onclick="goToStep(8)">back</a>
+</div>
+
+<div id="step-10" style="display: none;">
+  Isn't it interesting u can learn to learn to use your brain for a change u want so fast?
+  <br />
+  <br />
+  - This is wonderful, <a class="share-this-page-fb">I want more to experience this</a><br />
+  - This is highly useful, let's <a onclick="goToStep(0)">do it again on the same phrase</a><br />
+  - This is highly useful, let's <a onclick="goToStep(0)">do it again on the different phrase</a><br />
+  - I feel much better and <a href="/i-dont-charge-a-accept/">want to give back</a>
+</div>
+
+<hr />
+
+You can do this, and more,
+<a href="/who-am-i-anyway/">I got your back.</a>
+<a class="ending-avatar" href="/who-am-i-anyway/">
+  <img src="/content/images/2017/06/me_teching_zoomed.jpg" alt="Adam Goldman Reverse Spin" />
+</a>
+\- [**Adam "talk is cheap" Goldman**](/)
+
+<pre>
+<script>
+  el('phrase-form').addEventListener('submit', onPhraseSubmit)
+  el('normal-tempo-describe-form').addEventListener('submit', onNormalTempoDescribeFormSubmit)
+  el('slow-tempo-describe-form').addEventListener('submit', onSlowTempoDescribeFormSubmit)
+  el('slower-tempo-describe-form').addEventListener('submit', onSlowerTempoDescribeFormSubmit)
+
+  function onPhraseSubmit(evt) {
+    evt.preventDefault()
+    populateRefSelector('.phrase-ref', 'phrase-input')
+    goToStep(3)
+  }
+
+  function onNormalTempoDescribeFormSubmit(evt) {
+    evt.preventDefault()
+    goToStep(5)
+  }
+
+  function flashSlow() {
+    el('flash-slow-buttons').style.display = 'none'
+    el('flash-slow-nav').style.display = 'none'
+    const words = el('phrase-input').value.split(' ')
+    words.forEach((w, idx) => {
+      setTimeout(() => {
+        el('flash-slow').innerHTML = w
+        if (w !== words[words.length - 1]) {
+          return
+        }
+        setTimeout(() => {
+          el('flash-slow').innerHTML = ''
+          el('flash-slow-nav').style.display = 'block'
+        }, 3000)
+      }, idx * 3000)
+    })
+  }
+
+  function onSlowTempoDescribeFormSubmit(evt) {
+    evt.preventDefault()
+    goToStep(7)
+  }
+
+  function flashSlower() {
+    el('flash-slower-buttons').style.display = 'none'
+    el('flash-slower-nav').style.display = 'none'
+    const words = el('phrase-input').value.split(' ')
+    words.forEach((w, idx) => {
+      setTimeout(() => {
+        el('flash-slower').innerHTML = w
+        if (w !== words[words.length - 1]) {
+          return
+        }
+        setTimeout(() => {
+          el('flash-slower').innerHTML = ''
+          el('flash-slower-nav').style.display = 'block'
+        }, 5500)
+      }, idx * 5500)
+    })
+  }
+
+  function onSlowerTempoDescribeFormSubmit(evt) {
+    evt.preventDefault()
+    goToStep(9)
+  }
+
+  function exactlyTheSame () {
+    alert('go through the process again, and if you still dont feel improvement,  contact me and I\'ll do it with u')
+    goToStep(0)
+  }
+</script>
+</pre>
+
+<style>
+pre { display: none; }
+</style>

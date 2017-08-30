@@ -4,6 +4,7 @@ function populateRefSelector(refSelector, inputId) {
 
 function goToStep(n) {
   document.querySelectorAll('[id^="step"]').forEach(node => node.style.display = 'none')
+  document.querySelectorAll('.step-ref').forEach(node => node.innerHTML = n)
   el(`step-${n}`).style.display = 'block'
   scrollTo(document.body, 0, 300)
 }
